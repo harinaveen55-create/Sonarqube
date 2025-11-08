@@ -2,7 +2,7 @@
 #updating amazon linux patches
 sudo yum update -y
 #installing docker engine
-sudo amazon-linux-extras install docker -y
+sudo yum install docker -y
 #starting docker service
 sudo service docker start
 #Adding user ec2-user to docker group
