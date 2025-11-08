@@ -14,6 +14,6 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-c
 #changing the permissions
 sudo chmod +x /usr/local/bin/docker-compose
 #Add this command for sonarqube installation (only)
-sudo echo "vm.max_map_count = 262144" >> /etc/sysctl.d/99-sysctl.conf
+sudo echo "some.sysctl.setting = 1" | sudo tee /etc/sysctl.d/99-sysctl.conf
 
 sudo systemctl restart docker
